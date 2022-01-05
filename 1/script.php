@@ -1,5 +1,13 @@
 <?php
 
+/*
+ * NOT FINISHED
+ *
+ * CURRENT ANSWER: 266333
+ *
+ * STARTED: 5 JANUARI 2022
+ */
+
 $maximum = 1000;
 $count = 0;
 
