@@ -9,21 +9,16 @@
  * FINISHED: 5 JANUARI 2022
  */
 
-$maximum = 4000000;
 $sum = 0;
 
-$previousValue = 1;
-$currentValue = 1;
+$previousValue = $currentValue = 1;
 
-while($currentValue <= $maximum) {
+while($currentValue <= 4000000) {
     $newValue = $previousValue + $currentValue;
 
-    if ($newValue % 2 == 0) {
-        $sum += $newValue;
-    }
+    if ($newValue % 2 == 0) $sum += $newValue;
 
-    $previousValue = $currentValue;
-    $currentValue = $newValue;
+    [$previousValue, $currentValue] = array($currentValue, $newValue);
 }
 
 echo $sum;
