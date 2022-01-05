@@ -1,6 +1,6 @@
 <?php
 
-$maximum = 10;
+$maximum = 1000;
 $count = 0;
 
 $array = [];
@@ -21,5 +21,5 @@ while ($count < $maximum) {
     $count++;
 }
 
-print_r(array_sum($array));
+echo array_sum($array);
 
