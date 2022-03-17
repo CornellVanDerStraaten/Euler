@@ -49,6 +49,7 @@ function divideNumber(int $number, int $divide_by)
     ];
 }
 
+
 function getLargestPrimeFactor(int $number)
 {
     // Init array
